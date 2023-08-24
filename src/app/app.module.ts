@@ -15,6 +15,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -34,6 +35,7 @@ import { MatTableModule } from '@angular/material/table';
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: PizzaClientComponent },
     ]),
+    HttpClientModule,
     MatTableModule,
     MatTooltipModule,
     MatFormFieldModule,
